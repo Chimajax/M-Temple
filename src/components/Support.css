@@ -1,0 +1,132 @@
+.support-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow-y: auto;
+  }
+  
+  .messages-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    height: 100%;
+  }
+  
+  .message-box {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    max-width: 70%;
+  }
+  
+  .sent {
+    margin-top: 10px;
+    background-color: #d1e7dd; /* Light green for sent messages */
+    align-self: flex-end; /* Align to the right */
+    width: 80%;
+    margin-left: 50px;
+  }
+  
+  .received {
+    background-color: #f8d7da; /* Light red for received messages */
+    align-self: flex-start; /* Align to the left */
+  }
+  
+  .message-input-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    bottom: 5%;
+    z-index: 200;
+    gap: 5px;
+  }
+
+  @media (max-width: 600px) {
+    .message-input-container {
+      left: 3%;
+      bottom: 9%;
+    }
+
+    .sent {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (min-width: 601px) {
+    .message-input-container {
+      width: 40%;
+      left: 30%;
+    }
+
+    .support-container {
+      width: 50%;
+      border: 1px solid white;
+      margin-left: 25%;
+    }
+
+    .send-pic {
+      margin-left: 15px;
+    }
+
+    .sent {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 190px;
+    }
+
+  }
+  
+  .message-input {
+    margin: 0;
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .send-button {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    width: 10%;
+    border: none;
+    border-radius: 8px;
+    cursor: none;
+  }
+  
+  .send-pic {
+    width: 25px;
+    height: 25px;
+    cursor: none;
+  }
+
+  .send-pic img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+    cursor: none;
+  }
+
+  .read-icon {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+
+  .read-icon img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }

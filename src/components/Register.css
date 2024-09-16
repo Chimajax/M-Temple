@@ -1,0 +1,194 @@
+/* Register.css */
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: calc(100vh - 60px); /* Adjust to account for the fixed header height */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 100%);
+    margin-top: 65px;
+}
+
+.loading-circle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    background-color: blue;
+    border-radius: 50%;
+    z-index: 1000; /* Ensure it appears above other elements */
+    animation: pulse 0.5s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    to {
+      transform: scale(1.05);
+    }
+  }
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust width as needed */
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a73e8; /* Blue button background */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #1669c7;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 11px;
+    height: 10px;
+    margin-top: 15px;
+    margin-right: 10px; /* Gap between checkbox and text */
+    accent-color: #1a73e8; /* Optional: Change checkbox color (works in some modern browsers) */
+}
+
+.checkbox-group label {
+    font-size: 16px;
+    margin: 0; /* Remove default margin */
+}
+
+.error-text {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 30px; /* Space for the eye icon */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.or-divider {
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.google-signin {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    background-color: #db4437; /* Google red button background */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Remove underline from the link */
+    display: block; /* Ensure the button behaves like a block element */
+    transition: background-color 0.3s;
+}
+
+.google-signin:hover {
+    background-color: #c53727;
+}
+
+/* Style for the disabled Google button */
+.google-signin.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+/* Dialogue Box */
+.dialogue-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1001;
+  }
+
+  @media (min-width: 601px) {
+    .register-dialogue-box {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        position: absolute;
+        width: 30%;
+        align-items: center;
+        border-radius: 15px;
+      }
+
+  }
+
+  @media (max-width: 600px) {
+    .register-dialogue-box {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        position: absolute;
+        width: 80%;
+        align-items: center;
+        border-radius: 15px;
+      }
+        
+  }
+  
+  .register-dialogue-box button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    width: 80%;
+  }
+  
+  

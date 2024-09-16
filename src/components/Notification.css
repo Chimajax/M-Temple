@@ -1,0 +1,89 @@
+/* Ensure the body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Container to fill the entire viewport */
+.notification-content {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 100%);
+  color: white;
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items to the top */
+  padding-top: 10%; /* Push content down by 10% of viewport height */
+  box-sizing: border-box;
+  overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+}
+
+/* Section for notifications */
+.notification-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Adjust based on your design */
+  box-sizing: border-box;
+}
+
+/* Notification card styling */
+.notification-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%; /* Full width of the parent container */
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Notification card text styling */
+.notification-card p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Timestamp styling */
+.notification-timestamp {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Loading message styling */
+.notification-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the loading message covers available space */
+  color: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .notification-content {
+    padding-top: 23%; /* Increase padding on smaller screens */
+    padding-bottom: 25%;
+  }
+
+  .notification-card {
+    width: 90%; /* Full width with some margin on smaller screens */
+    max-width: none; /* Remove maximum width restriction */
+  }
+}
+
+/* Media query for screens larger than 600px */
+@media (min-width: 601px) {
+  .notification-content {
+    padding-top: 10%; /* Standard padding on larger screens */
+  }
+
+  .notification-card {
+    width: 80%; /* Adjust width for better alignment on larger screens */
+    max-width: 600px; /* Maintain maximum width on larger screens */
+  }
+}

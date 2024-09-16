@@ -1,0 +1,130 @@
+/* SignIn.css */
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height of the viewport */
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 100%);
+  color: white;
+  padding: 0 20px; /* Add padding to prevent content from touching the edges */
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+  max-width: 320px; /* Adjust width as needed */
+}
+
+input {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #aaa; /* Placeholder color */
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+ 
+
+.remember-me-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.remember-me-container input[type="checkbox"] {
+  width: 11px;
+  height: 10px;
+  margin-top: 15px;
+  margin-right: 10px; /* Gap between checkbox and text */
+  accent-color: #1a73e8; /* Optional: Change checkbox color (works in some modern browsers) */
+}
+
+.remember-me-container label {
+  font-size: 16px;
+  margin: 0; /* Remove default margin */
+}
+
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1a73e8; /* Blue button background */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1669c7;
+}
+
+.register-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.or-divider {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.google-signin {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #db4437; /* Google red button background */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.google-signin:hover {
+  background-color: #c53727;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 30px; /* Space for the eye icon */
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}

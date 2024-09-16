@@ -1,0 +1,238 @@
+/* Style for the whole page background */
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures the gradient covers the full height of the page */
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+
+
+/* Style for each image card */
+.image-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 80%; /* Adjust width similar to quote-card */
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative; /* For positioning elements inside */
+  color: #333;
+}
+
+/* Container for the image */
+.v-image-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns the image to the extreme left */
+  width: 100%; /* Takes full width */
+  margin-bottom: 20px; /* Spacing between image and other content */
+  pointer-events: none;
+}
+
+/* Style for the actual image displayed */
+.image-display {
+  width: 70px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  border-radius: 5px;
+  object-fit: cover; /* Ensures the image covers the area */
+  margin-right: 20px; /* Spacing between image and text */
+}
+
+/* Actions section (like, download, etc.) */
+.image-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Style for like count and icons */
+.like-count, .download-button, .dots-menu {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.action-icon, .r-action-icon {
+  width: 24px; /* Ensuring consistency with VideoSection icons */
+  height: 24px;
+  cursor: pointer;
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.like-number {
+  color: black; /* Color consistency with the overall theme */
+  margin-left: 5px;
+}
+
+/* Loading or no images message */
+.i-loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjust for better visibility */
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Media Query for PC View (min-width: 601px) */
+@media (max-width: 600px) {
+
+    /* Container for the image section 
+.image-section {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 20px;
+  height: 100vh; 
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 100%);
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+} */
+
+  .image-section {
+    display: flex;
+  flex-direction: column; /* Aligns images in a column */
+  align-items: center; /* Centers the image section */
+  padding: 20px;
+  height: 100%; /* Similar to quote-section */
+    margin-top: 80px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+  }
+
+  .image-card {
+    background-color: rgba(255, 255, 255, 0.8);  /* Semi-transparent background */
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 10px 0;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* For positioning elements inside */
+    color: white;
+  }
+
+  .v-image-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns the image to the extreme left */
+    width: 40%; /* Takes full width */
+    margin-bottom: 20px; /* Spacing between image and other content */
+    opacity: 25%;
+  }
+
+  .v-image-container-b {
+  display: flex;
+  color: black;
+  position: absolute;
+  width: 20%;
+  top: 40%;
+  font-weight: bold;
+  z-index: 100;
+  }
+
+  .image-name {
+  text-align: left;
+  width: 60%;
+  position: absolute;
+  left: 34%;
+  top: 13%;
+  }
+
+  .image-name-t {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .i-download-button {
+    z-index: 10;
+    cursor: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
+}
+
+@media (min-width: 601px) {
+
+
+
+  .image-section {
+    display: flex;
+    align-items: center; /* Centers the image section */
+   /* height: 100vh;  Similar to quote-section */
+    top: 30%;
+    position: absolute;
+
+
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: -10%; /* Add this line to create a 5px gap under the header */
+  }
+
+  .image-card {
+    background-color: rgba(255, 255, 255, 0.8);  /* Semi-transparent background */
+    border: 1px solid #ddd;
+    width: 40%;
+    padding: 5px;
+    margin: 10px 0;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* For positioning elements inside */
+    color: white;
+  }
+
+  .v-image-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns the image to the extreme left */
+    width: 40%; /* Takes full width */
+    margin-bottom: 20px; /* Spacing between image and other content */
+    opacity: 25%;
+  }
+
+  .v-image-container-b {
+  display: flex;
+  color: black;
+  position: absolute;
+  width: 20%;
+  top: 40%;
+  font-weight: bold;
+  font-style: italic;
+  z-index: 100;
+  }
+
+  .image-name {
+  text-align: left;
+  width: 60%;
+  position: absolute;
+  left: 34%;
+  top: 13%;
+  }
+
+  .image-name-t {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+
+
+
+}
+
+.i-download-button {
+  z-index: 10;
+  cursor: none;
+}

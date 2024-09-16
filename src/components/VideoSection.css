@@ -1,0 +1,240 @@
+.my-quote-section {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  flex-wrap: wrap; /* Ensure that items do not wrap to the next line */
+  overflow-y: auto; /* Allow horizontal scrolling if needed */
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.my-quote-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 70%;
+  height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+  
+  
+  
+  .like-count {
+    display: flex;
+    align-items: center;
+  }
+  
+  .like-count .action-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px; /* Space between icon and number */
+  }
+  
+  .like-number {
+    font-size: 14px;
+    color:  black;
+  }
+  
+  .download-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .download-button .action-icon { 
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: 601px) {
+
+    .quote-section {
+      display: flex;
+      flex-wrap: nowrap; /* Ensure that items do not wrap to the next line */
+      overflow-x: auto; /* Allow horizontal scrolling if needed */
+      gap: 20px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+
+
+    .my-quote-card {
+      width: 20%;
+      }
+
+    .quote-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* number of lines to show */
+      line-clamp: 2; /* Add this line for compatibility */
+      -webkit-box-orient: vertical;
+      overflow-y: hidden;
+    }
+
+
+
+
+  }
+
+  @media (max-width: 600px) {
+    .my-quote-section {
+      display: flex;
+      height: 100%;
+      margin-bottom: 50px;
+
+    }
+
+    .quote-section {
+      display: flex;
+      flex-wrap: nowrap; /* Ensure that items do not wrap to the next line */
+      overflow-x: auto; /* Allow horizontal scrolling if needed */
+      gap: 20px;
+      width: auto;
+      margin-bottom: 20px;
+    
+    }
+
+    .quote-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* number of lines to show */
+      line-clamp: 2; /* Add this line for compatibility */
+      -webkit-box-orient: vertical;
+      overflow-y: hidden;
+    }
+    
+  }
+
+  .quote-text {
+    height: 68px;
+    width: 220px;
+  }
+
+
+  .q-loading-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 100%);
+  }
+
+
+
+ 
+
+  .quote-card {
+    background-color: rgba(255, 255, 255, 0.8);  /*Semi-transparent background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    width: auto; /* Adjust width based on the container */
+    height: 150px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .quote-author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .quote-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .quote-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .quote-actions-1 {
+    display: flex;
+    justify-content: space-between;
+    bottom: 20px;
+    width: 220px;
+
+  }
+
+
+  
+  .like-count, .download-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .like-number {
+    margin-left: 5px;
+  }
+  
+  .action-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+  .dots-menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  .r-action-icon {
+    width: 24px;
+    height: 24px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 100px; /* Adjust width as needed */
+  }
+  
+  .menu-item {
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    color: #000;
+  }
+  
+  .menu-item:hover {
+    background: #f0f0f0;
+  }
+  
+  .action-icon {
+    cursor: pointer;
+    /* Other styles for action icon */
+  }
+  

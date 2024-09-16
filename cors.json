@@ -1,0 +1,10 @@
+{
+  "cors": [
+    {
+      "origin": ["http://localhost:3000", "*"],
+      "method": ["GET", "HEAD", "POST"],
+      "maxAgeSeconds": 3600,
+      "responseHeader": ["Content-Type", "Authorization"]
+    }
+  ]
+}

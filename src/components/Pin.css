@@ -1,0 +1,66 @@
+.pin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: transparent;
+  }
+  
+  .pin-dialogue-box {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+    border: 2px solid white;
+  }
+  
+  .pin-dialogue-box input[type="password"] {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .pin-dialogue-box button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .pin-dialogue-box button:hover {
+    background-color: #ccc;
+  }
+  
+  .new-pin-dialogue-box {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .new-pin-dialogue-box button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .new-pin-dialogue-box button:hover {
+    background-color: #ccc;
+  }
+
+  .pin-error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    position: absolute;
+  }

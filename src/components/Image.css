@@ -1,0 +1,290 @@
+/* General Styles for Image Container */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: 100%;
+    color: white;
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.image-error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: -15px;
+    left: 25%;
+    position: absolute;
+  }
+
+/* Media Query for PC View (min-width: 601px) */
+@media (min-width: 601px) {
+    .image-error-message {
+        margin-top: -15px;
+        position: relative;
+        color: red;
+        font-size: 12px;
+        margin-top: 0px;
+        left: 1%;
+        gap: 10px;
+        padding: 0;
+        width: 30%;
+      }
+
+    .image-container {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 100%); 
+        margin-top: 70px;
+        width: 100%;
+        flex-direction: row;
+        padding: 50px;
+        padding-bottom: 100px;
+    }
+
+    .image-pc-right {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        top: 250px;
+        left: 51%;
+        
+
+    }
+
+    .image-profile-info-container {
+        width: auto;
+        color: white;
+        position: absolute;
+        left: 53%; /* Lean 10px away from the extreme left */
+        top: 170px;
+    }
+
+    .image-profile-pic-container {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .image-placeholder {
+        width: 40%;
+        height: 80vh;
+        background-color: #b2b2b2; /* Ash color */
+        color: black;
+        margin-right: 1px; /* Margin right of 10px */
+        margin-left: 70px; /* Lean 10px away from the extreme left */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .image-select {
+        margin-top: 30px;
+        color: white;
+     background-color: #333;
+     height: 40px;
+    }
+
+
+    .image-upload-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 2px; /* Keep inputs 2px to the right of image placeholder */
+    }
+
+    .image-input, .image-select {
+        width: 70%; /* Width of 30% for input elements */
+        margin-bottom: 40px; /* Spacing between input elements */
+    }
+
+    .radio-group {
+        margin-left: 2px; /* Remove default margin and align to left */
+        margin-bottom: 30px;
+    }
+
+    .radio-group label {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        margin-bottom: 20px;
+    }
+
+    .radio-group input[type="radio"] {
+        margin: 0;
+        margin-left: 30px;
+        width: 5%;
+        margin-right: 10px;
+    
+        }
+
+    .radio-group input {
+        margin-right: 2px; /* 2px gap between radio input and text */
+    }
+
+    .post-button {
+        width: 40%; /* Width of 40% for POST button */
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+}
+
+/* Media Query for Phone View (max-width: 600px) */
+@media (max-width: 600px) {
+
+
+    .image-container {
+        margin-top: 80px;
+        margin-bottom: 50px; /* Margin bottom to avoid overlap with footer */
+    }
+
+    .image-profile-info-container {
+        width: 90%;
+        left: 10px; /* Lean 10px away from the extreme left */
+        color: white;
+    }
+
+    .image-profile-pic-container {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .image-placeholder {
+        width: 40%; /* 40% width */
+        height: 200px; /* Placeholder height of 50px */
+        background-color: #b2b2b2; /* Ash color */
+        margin: 0 auto; /* Centered on the screen */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .image-upload-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-input, .image-select {
+        width: 80%; /* Width of 80% for each input element */
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .image-select {
+        color: white;
+     background-color: #333;
+    }
+
+    .radio-group {
+        margin-left: 10px; /* Lean radio elements 10px from the left */
+        width: 100%; /* Ensure radio text appears in a straight line */
+    }
+
+    .radio-group input[type="radio"] {
+    margin: 0;
+    margin-left: 30px;
+    width: 5%;
+    margin-right: 10px;
+
+    }
+
+    .radio-group label {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 95%;
+        left: 1%;
+    }
+
+    .radio-group input {
+        margin-right: 2px; /* 2px gap between radio input and text */
+    }
+
+    .post-button {
+        width: 80%; /* Width of 80% for POST button */
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 10px 0;
+        margin-bottom: 50px;
+    }
+}
+
+/* General Styles for Profile Info */
+.image-profile-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* General Styles for Upload Container */
+.image-upload-container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* General Styles for Image Placeholder */
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* General Styles for Radio Group */
+.radio-group {
+    margin: 10px 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.radio-group input {
+    margin-right: 2px;
+}
+
+/* General Styles for POST Button */
+.post-button:hover {
+    background-color: #0056b3;
+}
+
+
+.dialogue-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .dialogue-box button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  

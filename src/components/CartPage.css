@@ -1,0 +1,40 @@
+.buy-button {
+    position: fixed;
+    bottom: 10%;
+    width: auto;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 20px 45px;
+    z-index: 500;
+}
+
+.buy-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.white-texttt {
+    color: white;
+    z-index: 100;
+}
+
+  /* Adjust styles for smaller screens */
+
+    /* Adjust styles for smaller screens */
+    @media (max-width: 600px) {
+        .cart-fixed-password-box {
+            position: fixed;
+            top: 25%;
+            left: 6%;
+        }
+      }
+
+  @media (min-width: 601px) {
+    .cart-fixed-password-box {
+        position: fixed;
+        top: 30%;
+        left: 35%;
+    }
+  }

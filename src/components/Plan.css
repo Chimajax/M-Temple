@@ -1,0 +1,97 @@
+.plan-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 100%);
+  color: white;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.plan-info-container {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.change-plan-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  border: 7px solid black;
+  color: white; /* Changed from transparent to white */
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 200px;
+  max-width: 300px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-box {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 10px;
+  min-width: 200px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.plan-name {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.plan-box ol {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.plan-price {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  cursor: none;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .plans-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (min-width: 601px) {
+  .plans-container {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+}

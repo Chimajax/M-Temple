@@ -1,0 +1,29 @@
+.p-follow-start {
+    background-color: black;
+    width: 60%;
+    padding: 10px 1px;
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 4px;
+    padding-left: 4px;
+}
+
+.p-follow-start:hover {
+  background-color: white;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 30%;
+    left: 6%;
+}
+
+  /* Adjust styles for smaller screens */
+  @media (min-width: 601px) {
+    .absolute-box {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+    }
+  }

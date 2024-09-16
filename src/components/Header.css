@@ -1,0 +1,201 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.header-logo {
+  font-size: 24px;
+  position: fixed;
+}
+
+.cart-direct {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  margin-right: auto;
+}
+
+.cart-direct a {
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-right: 30px; /* Adjust based on your settings icon position */
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-nav .login-button {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.header-nav .login-button:hover {
+  background-color: #ccc;
+}
+
+.profile-pic-contain {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 20px; /* Align the profile picture with navigation elements */
+}
+
+.profile-picc {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.settings-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute; /* Ensure it stays at the extreme right */
+  right: 50px; /* Adjust based on your desired gap */
+  top: 50%; /* Vertically center it */
+  transform: translateY(-50%); /* Center it perfectly */
+}
+
+.settings-dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.settings-dialog ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.settings-dialog ul li {
+  margin-bottom: 20px;
+}
+
+.settings-dialog ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.logout-button {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #ccc;
+}
+
+.cancel-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* PC view */
+@media (min-width: 601px) {
+  .header-logo {
+    left: 10%;
+  }
+
+  .settings-dialog {
+    width: 30%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+ .header-nav a {
+    display: none; /* Hide only the navigation links */
+  }
+
+  .header-logo {
+    left: 31%;
+  }
+
+  .settings-icon {
+    display: block; /* Ensure the settings icon is visible */
+    right: 50px; /* Align with the same gap as PC view */
+  }
+}
+
+.create-box-h {
+  position: fixed;
+  top: 185px; /* Adjust this value if the footer height changes */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 30%; /* Adjust width as needed */
+  background-color: black;
+  border-radius: 10px;
+  padding: 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px; /* Space between the links */
+  z-index: 1000;
+}
+
+.create-box-link-h {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  width: 70%; /* Make the links take up full width */
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-box-link-h:hover {
+  background-color: #ddd; /* Optional hover effect */
+}

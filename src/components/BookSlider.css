@@ -1,0 +1,91 @@
+.book-slider {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure that items do not wrap to the next line */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    padding-bottom: 10px;
+  } 
+  
+  .book-placeholder {
+    width: 90%;
+    max-width: 300px;
+    height: 200px; /* This is for PC view */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    margin-right: 20px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+  }
+
+  .e-loading-page {
+    height: 170px;
+  }
+
+  @media (min-width: 601px) {
+
+  }
+  
+  /* Adjust styles for smaller screens */
+  @media (max-width: 600px) {
+    .book-slider {
+      justify-content: flex-start;
+      margin-top: -20px;
+    }
+  
+    .book-placeholder {
+      width: 90%;
+      max-width: 200px;
+      height: 200px;
+      margin-right: 20px;
+      flex: 0 0 auto;
+    }
+
+
+
+  }
+
+  .v-ebook-container-main {
+    display: flex;
+    flex-direction: row;
+    height: 68%;
+    position: relative;
+  }
+
+  .v-ebook-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    left: 0;
+  }
+
+  .v-cover-display {
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+  
+    position: relative;
+  }
+
+  .ebook-name {
+    position: relative;
+    width: 48%;
+    text-align: left;
+    font-size: 14px;
+    color: black;
+  }
+
+  .ebook-name-t {
+    margin-bottom: 10px;
+  }
+
+  .ebook-actions {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .like-count {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
